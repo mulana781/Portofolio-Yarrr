@@ -1,0 +1,211 @@
+/* Sticky Navbar */
+.custom-navbar {
+  background-color: rgba(9, 2, 224, 0.8);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(29, 161, 242, 1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+  color: #f3f3f3;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Mengatur font-size untuk navbar link pada perangkat kecil */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: rgba(29, 161, 242, 0.7);
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fff;
+  background-color: rgba(29, 161, 242, 1);
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);
+}
+
+/* Pendidikan */
+.pendidikan {
+  position: relative;
+  padding: 20px 0;
+}
+
+.pendidikan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+  z-index: 1;
+}
+
+/* Atur ulang layout untuk perangkat kecil */
+@media (max-width: 768px) {
+  .pendidikan-item {
+    padding: 0;
+    text-align: center;
+  }
+  .pendidikan-item:nth-child(even) {
+    padding: 0;
+    text-align: center;
+  }
+  .pendidikan-item .pendidikan-icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.pendidikan-item .pendidikan-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: #5bc0de;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #ffffff;
+  z-index: 3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pendidikan-item .pendidikan-content {
+  position: relative;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.pendidikan-item h4 {
+  color: #333333;
+  font-weight: bold;
+}
+
+.pendidikan-item p {
+  color: #666666;
+}
+
+/* Project Gallery */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #5bc0de;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Form Photo Styling */
+.form-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .form-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Additional Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  color: #333333;
+}
+
+p {
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
